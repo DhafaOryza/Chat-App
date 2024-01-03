@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Content -->
+        <aside class="aside" id="aside">
+            <div class="toggle">
+                <div id="logo" class="logo">
+                    <h2>ORY<span>ZA</span></h2>
+                </div>
+                <div class="close" id="close">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                    <h2>Close</h2>
+                </div>
+                <div class="sidebar">
+                    <a href="#" class="active" id="home">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <h2>Home</h2>
+                    </a>
+                    <a href="#" class="about" id="about">
+                        <span class="material-symbols-outlined">
+                            web_asset
+                        </span>
+                        <h2>About</h2>
+                    </a>
+                    <a href="#" class="logout" onclick="logout()">
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                        <h2>Logout</h2>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <!-- End Of Sidebar Content -->
+        
+        <!-- Main Content -->
+        <main>
+            <div class="main_container">
+                <div class="main_title">
+                    <a href="#" class="menu" id="menu">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </a>
+                    <h1>Main</h1>
+                    <a href="#" class="account_box" id="account_box">
+                        <span class="material-symbols-outlined">
+                            account_box
+                        </span>
+                    </a>
+                </div>
+                <div class="input_container">
+                    <ul class="message_box" id="message"></ul>
+                    <form class="input_content" id="form">
+                        <input type="text" placeholder="Message" class="input_text" id="input">
+                        <button class="button">
+                            <span class="material-symbols-outlined">
+                                send
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- End Of Main Content -->
+
+        <!-- Profile Content -->
+        <div class="profile_container" id="profile_container">
+            <div class="profile_content">
+                <a class="profile_options" id="profile_options">
+                    <span class="material-symbols-outlined" id="close_profile">
+                        close
+                    </span>
+                    <h1>Profile</h1>
+                </a>
+                <div class="profile_card">
+                    <span id="account" class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                    <h2 id="name_profile">NAME</h2>
+                    <form class="profile_input" id="form_profile">
+                        <input type="text" placeholder="Change Your Name?" id="input_profile">
+                        <button class="done">
+                            <span id="done" class="material-symbols-outlined">
+                                done
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Of Profile Content -->
+    </div>
+    <!-- About -->
+    <div class="blank" id="blank">
+        <div class="about_container">
+            <div class="about_content">
+                <h1 class="title_about">
+                    About
+                </h1>
+                <p class="p_about">
+                    nothing to say ^_~
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
